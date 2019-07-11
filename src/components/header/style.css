@@ -1,0 +1,32 @@
+.header{
+    background-color: #e4e4e4;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,.15);
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__title{
+    font-size: 16px;
+    color: #777777;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.header__logo img{
+    max-width: 100%;
+}
+
+@media(max-width: 520px) {
+    .header__logo{
+        max-width: 55%;
+    }
+    
+    .header__title{
+        font-size: 14px;
+    }
+}

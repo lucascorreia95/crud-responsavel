@@ -1,0 +1,133 @@
+.create__container.container{
+    padding-top: 30px;
+}
+
+.create__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.create__title{
+    font-size: 16px;
+    color: #777777;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.create__search-button a{
+    height: 35px;
+    background-color: #ddd;
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #777777;
+    font-weight: bold;
+    border: 0;
+    max-width: 55px;
+    cursor: pointer;
+    transition: all .3s;
+    display: block;
+}
+
+.create__search-button a:hover{
+    opacity: 0.8;
+}
+
+.create__search-button img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+}
+
+.create__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 15px;
+}
+
+.create__input-wrapper{
+    width: 50%;
+}
+
+.create__content label{
+    font-size: 12px;
+    color: #777777;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.create__content input{
+    display: block;
+    height: 35px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0 10px;
+    color: #777777;
+    width: 90%;
+}
+
+.create__content button{
+    height: 35px;
+    background-color: #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 0 20px;
+    margin-top: 10px;
+    color: #777777;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.create__content button:hover{
+    opacity: 0.8;
+}
+
+.create__msg{
+    padding: 15px;
+    margin: 30px 0;
+    background-color: #ddd;
+    border-radius: 4px;
+    animation-name: msg;
+    animation-duration: 0.3s;
+}
+
+.create__msg-list{
+    list-style: none;
+}
+
+.create__msg-item{
+    font-size: 12px;
+    line-height: 18px;
+    color: #777777;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+@media(max-width: 767px){
+    .create__input-wrapper{
+        width: 100%;
+    }
+
+    .create__content input{
+        width: 100%;
+    }
+}
+
+@keyframes msg {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
